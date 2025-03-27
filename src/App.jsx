@@ -101,7 +101,27 @@ function App() {
               </div>
             </div>
           ) : (
-            <p>No games found</p>
+            <>
+              <p>No games found</p>
+              <div
+                style={{
+                  border: "1px solid white",
+                  padding: 10,
+                  borderRadius: 5,
+                  width: 300,
+                  cursor: "pointer",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                onClick={() => {
+                  // setActiveGame(game);
+                }}
+              >
+                <p>+ Add New Game</p>
+              </div>
+            </>
           )}
         </>
       )}
